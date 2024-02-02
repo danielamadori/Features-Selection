@@ -3,24 +3,16 @@
 ## Overview
 This project explores advanced feature selection techniques to enhance model performance on the "Breast Cancer Wisconsin (Diagnostic)" dataset. It employs various methods, including the Bidirectional Search (BDS) method, Mutual Information Feature Selection (MIFS), Variance, and Correlation methods, to identify the most significant features for accurate predictions.
 
-## Components
-
-### Python Scripts
-- **`mathFunctions.py`**: Implements mathematical operations and algorithms for feature analysis.
-- **`metrics.py`**: Provides metrics for model performance evaluation.
-- **`printScore.py`**: Displays and logs performance metrics.
-- **`utils.py`**: Utility functions for data preprocessing and auxiliary tasks.
-
 ### Jupyter Notebook (`main.ipynb`)
 The notebook includes detailed explanations and implementations of several feature selection methods:
+- **Variance Method**: Evaluates features based on their variance, with the premise that features with low variance may contain less information.
+- **Correlation Method**: Assesses the strength of the relationship between each feature and the target variable, prioritizing features with high correlation to the target.
 - **Discretization with ChiMerge**: Outlines the process of transforming continuous data into discrete bins based on chi-squared statistics.
 - **Entropy-Based Methods**: Discusses the principles of Entropy, Joint Entropy, and Conditional Entropy in the context of information gain.
 - **Mutual Information Feature Selection (MIFS)**: Utilizes mutual information to evaluate feature relevance, inspired by Roberto Battiti's work in "Using Mutual Information for Selecting Features in Supervised Neural Net Learning", IEEE Transactions on Neural Networks, August 1994. DOI: [10.1109/72.298224](https://doi.org/10.1109/72.298224).
 - **Correlation Feature Selection (CFS)**: A filter-based method that evaluates the predictive ability of feature subsets considering redundancy.
 - **Sequential Forward Selection (SFS)**: An incremental method that starts with a single attribute and adds attributes to optimize the feature set.
 - **Sequential Forward Floating Selection (SFFS)**: Combines elements of forward selection and backward elimination to iteratively refine the feature subset for optimal performance.
-- **Variance Method**: Evaluates features based on their variance, with the premise that features with low variance may contain less information.
-- **Correlation Method**: Assesses the strength of the relationship between each feature and the target variable, prioritizing features with high correlation to the target.
 
 ## Dataset
 Uses the "Breast Cancer Wisconsin (Diagnostic)" dataset, focusing on cell nuclei characteristics from breast mass FNA images.
@@ -39,9 +31,5 @@ The application of various feature selection methods has led to key findings, in
 ## Conclusion
 This project underscores the critical role of feature selection in machine learning workflows. The Mutual Information Feature Selection (MIFS) method, inspired by Roberto Battiti's work, proved especially valuable. Future work could explore more dynamic integration of feature selection with model training and the application of these methods to other datasets.
 
-## References
-- Battiti, R. (1994). Using Mutual Information for Selecting Features in Supervised Neural Net Learning. IEEE Transactions on Neural Networks, 5(4), 537-550. DOI: 10.1109/72.298224.
-
-
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
