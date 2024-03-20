@@ -6,3 +6,4 @@
 /__pycache__/
 
 dataset/breast-cancer-wisconsin_joint_entropy.csv
+dataset/breast-cancer-wisconsin_entropy.csv
