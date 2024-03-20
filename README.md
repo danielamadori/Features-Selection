@@ -12,7 +12,7 @@ The notebook includes detailed explanations and implementations of several featu
 - **Mutual Information Feature Selection (MIFS)**: Utilizes mutual information to evaluate feature relevance, inspired by Roberto Battiti's work in "Using Mutual Information for Selecting Features in Supervised Neural Net Learning", IEEE Transactions on Neural Networks, August 1994. DOI: [10.1109/72.298224](https://doi.org/10.1109/72.298224).
 - **Correlation Feature Selection (CFS)**: A filter-based method that evaluates the predictive ability of feature subsets considering redundancy.
 - **Sequential Forward Selection (SFS)**: An incremental method that starts with a single attribute and adds attributes to optimize the feature set.
-- **Sequential Forward Floating Selection (SFFS)**: Combines elements of forward selection and backward elimination to iteratively refine the feature subset for optimal performance.
+- **Sequential Forward Floating Selection (SFFS)**: Combines elements of forward selection and backward elimination to iteratively refine the feature subset for optimal performance. This work was inspired by the paper "Efficient Feature Subset Selection and Subset Size Optimization", in book: "Pattern Recognition Recent Advances", February 2010. DOI: [10.5772/9356](https://doi.org/10.5772/9356).
 
 ## Dataset
 Uses the "Breast Cancer Wisconsin (Diagnostic)" dataset, focusing on cell nuclei characteristics from breast mass FNA images.
