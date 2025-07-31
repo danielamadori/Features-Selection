@@ -25,6 +25,18 @@ To get started with this project, follow these steps:
 4. **Explore the Notebook**: Open the Jupyter Notebook (`main.ipynb`) in your Jupyter environment. You can do this by running `jupyter notebook` or `jupyter lab` in your terminal within the project directory.
 5. **Run the Notebook**: Execute the cells in the Jupyter notebook sequentially to understand the feature selection process, methodologies applied, and to view the results.
 
+## Visualizzare LaTeX in Jupyter
+Jupyter supporta nativamente le formule LaTeX.
+
+1. **Celle Markdown**: racchiudi l'espressione tra `$$` ... `$$` o `$` ... `$` per mostrare le formule.
+   ```markdown
+   $$J_{MIFS}(f_i) = I(f_i ; c) - \beta \sum_{f_s \in S} I(f_i; f_s)$$
+   ```
+2. **Celle di codice**: puoi usare `IPython.display.Math`.
+   ```python
+   from IPython.display import display, Math
+   display(Math(r"J_{MIFS}(f_i) = I(f_i ; c) - \\beta \\sum_{f_s \\in S} I(f_i; f_s)"))
+   ```
 ## Results
 The application of various feature selection methods has led to key findings, including the identification of highly informative features and comparisons of method effectiveness. Incorporating selected features into predictive models demonstrated an improvement in performance metrics.
 
